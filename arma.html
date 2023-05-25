@@ -4,18 +4,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Restaurante Guadalajara</title>
-  <style>
-    /* Estilos CSS para personalizar la página web */
-  </style>
+  <link rel="stylesheet" href="./Style.css">
 </head>
 <body>
-  <h1><img src="./guadalajara.jpg" alt="Logo de Guadalajara"></h1>
+    <picture>
+        <img src="logo.jpg" class="logo"/>
+    </picture>
+  <h1><img src="./guadalajara.jpg" alt="Logo de Guadalajara" class="letrascomida"></h1>
 
   <header>
     <nav>
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Arma tu picada</a></li>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./arma.html">Arma tu picada</a></li>
         <li><a href="#">Empresas</a></li>
         <li><a href="#">Mayoristas</a></li>
       </ul>
@@ -35,16 +36,16 @@
         </tr>
       </thead>
       <tbody>
-        <tr>
+        <tr >
           <td>Morcilla</td>
           <td>3500</td>
-          <td><input type="number" name="morcilla" min="0" value="0"></td>
-          <td></td>
+          <td><input type="number" name="morcilla" min="0" value="0" id="morcillacount"></td>
+          <td id="totrellena"></td>
         </tr>
-        <tr>
+        <tr >
           <td>Longaniza</td>
           <td>4500</td>
-          <td><input type="number" name="longaniza" min="0" value="0"></td>
+          <td><input type="number" name="longaniza" min="0" value="0" id="longanizacount"></td>
           <td></td>
         </tr>
         <!-- Resto de los ingredientes -->
@@ -54,9 +55,24 @@
           <td><input type="number" name="huesos" min="0" value="0"></td>
           <td></td>
         </tr>
+        <tr>
+            <td>Papa criolla</td>
+            <td>5000</td>
+            <td><input type="number" name="papa" min="0" value="0"></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Total</td>                      
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
       </tbody>
     </table>
-
+    <label for="nombreyapellido">Nombre y apellido</label>
+    <input type="text" id="nombreyapellido">
+    <label for="telefono">Número de telefono</label>
+    <input type ="number" id="telefono">
     <label for="metodo-entrega">Método de entrega:</label>
     <input type="text" id="metodo-entrega" name="metodo-entrega" list="opciones-entrega">
     <datalist id="opciones-entrega">
@@ -71,5 +87,6 @@
     <p>Dirección: Calle 110 N 18B-08</p>
     <p>Teléfono: 3045792017</p>
   </footer>
+  <script src="./picada.js/sumatoria.js"></script>
 </body>
 </html>

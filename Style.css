@@ -1,0 +1,58 @@
+
+body {
+  background-color: #f3f3f3;
+  color: #83764F;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  
+}
+
+header {
+  background-color: #A0D8B3;
+}
+
+nav {
+  display: inline;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline;
+}
+
+nav a {
+  display: inline-block;
+  padding: 10px;
+  text-decoration: none;
+  color: #83764F;
+}
+
+footer {
+  background-color: #A0D8B3;
+}
+
+.letrascomida {
+  width: 80%;
+  
+}
+
+.logo {
+    width: 15%;
+    
+}
+.logo, .letrascomida {
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    display: inline-block;
+}
+
+table {
+  margin: 0 auto;
+}
