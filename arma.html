@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurante Guadalajara</title>
+  <style>
+    /* Estilos CSS para personalizar la página web */
+  </style>
+</head>
+<body>
+  <h1><img src="guadalajara.jpg" alt="Logo de Guadalajara"></h1>
+
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Arma tu picada</a></li>
+        <li><a href="#">Empresas</a></li>
+        <li><a href="#">Mayoristas</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <h2>Arma tu propia picada eligiendo los artículos de la lista</h2>
+
+  <form action="#" method="POST">
+    <table>
+      <thead>
+        <tr>
+          <th>Ingredientes</th>
+          <th>Precio</th>
+          <th>Cantidad</th>
+          <th>Total</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Morcilla</td>
+          <td>3500</td>
+          <td><input type="number" name="morcilla" min="0" value="0"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Longaniza</td>
+          <td>4500</td>
+          <td><input type="number" name="longaniza" min="0" value="0"></td>
+          <td></td>
+        </tr>
+        <!-- Resto de los ingredientes -->
+        <tr>
+          <td>Huesos de cerdo</td>
+          <td>16000</td>
+          <td><input type="number" name="huesos" min="0" value="0"></td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <label for="metodo-entrega">Método de entrega:</label>
+    <input type="text" id="metodo-entrega" name="metodo-entrega" list="opciones-entrega">
+    <datalist id="opciones-entrega">
+      <option value="Domicilio">
+      <option value="Recoger">
+    </datalist>
+
+    <button type="submit">Enviar</button>
+  </form>
+
+  <footer>
+    <p>Dirección: Calle 110 N 18B-08</p>
+    <p>Teléfono: 3045792017</p>
+  </footer>
+</body>
+</html>
