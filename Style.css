@@ -1,17 +1,32 @@
 
 body {
-  background-color: #f3f3f3;
+  background-color: #ffffff;
   color: #83764F;
   text-align: center;
   margin: 0;
   padding: 0;
-  
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.navfont {
+  font-size: 2.2rem;
+}
+.subtitulo {
+  font-size: 2.2rem;
 }
 
 header {
   background-color: #A0D8B3;
 }
-
+.parafo {
+  font-size: 1.8rem;
+  margin-left: 50px;
+  margin-right: 50px;
+}
 nav {
   display: inline;
 }
@@ -35,11 +50,18 @@ nav a {
 
 footer {
   background-color: #A0D8B3;
+  padding: 1px;
+  margin-top: 2px;
+  font-size: 1.8rem;
 }
 
 .letrascomida {
   width: 80%;
   
+}
+
+#homepic {
+  width: 50%;
 }
 
 .logo {
@@ -55,4 +77,5 @@ footer {
 
 table {
   margin: 0 auto;
+  font-size: 1.8rem;
 }

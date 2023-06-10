@@ -1,5 +1,5 @@
-const table = document.getElementById('picada-table');
-    const rows = document.getElementsByTagName('tr');
+    const table = document.getElementById('picada-table');
+    const rows = table.getElementsByTagName('tr');
 
     for (let i = 1; i < rows.length; i++) {
       const row = rows[i];
@@ -20,18 +20,38 @@ const table = document.getElementById('picada-table');
 
     function calculateTotal() {
       let totalSum = 0;
-
-      for (let i = 1; i < rows.length; i++) {
+  
+      for (let i = 1; i < rows.length - 1; i++) {
         const row = rows[i];
         const totalCell = row.cells[3];
         const total = parseFloat(totalCell.textContent);
-
+  
         if (!isNaN(total)) {
           totalSum += total;
         }
       }
+      const totalRow = rows[rows.length - 1];
+    const totalCell = totalRow.cells[3];
+    totalCell.textContent = totalSum;
+  }
 
-      const totalRow = table.rows[table.rows.length - 1];
-      const totalCell = totalRow.cells[3];
-      totalCell.textContent = totalSum;
-    }
+    
+
+  
+    // function calculateTotal() {
+    //   let totalSum = 0;
+
+    //   for (let i = 1; i < rows.length; i++) {
+    //     const row = rows[i];
+    //     const totalCell = row.cells[3];
+    //     const total = parseFloat(totalCell.textContent);
+
+    //     if (!isNaN(total)) {
+    //       totalSum += total;
+    //     }
+    //   }
+
+    //   const totalRow = table.rows[table.rows.length - 1];
+    //   const totalCell = totalRow.cells[3];
+    //   totalCell.textContent = totalSum;
+    // }

@@ -14,7 +14,7 @@
 
   <header>
     <nav>
-      <ul>
+      <ul class="navfont">
         <li><a href="./index.html">Home</a></li>
         <li><a href="./arma.html">Arma tu picada</a></li>
         <li><a href="#">Empresas</a></li>
@@ -23,10 +23,10 @@
     </nav>
   </header>
 
-  <h2>Arma tu propia picada eligiendo los artículos de la lista</h2>
+  <h2 class="subtitulo">Arma tu propia picada eligiendo los artículos de la lista</h2>
 
-  <form action="#" method="POST">
-    <table>
+  <form action="picada-table" method="POST">
+    <table id="picada-table">
       <thead>
         <tr>
           <th>Ingredientes</th>
@@ -39,28 +39,94 @@
         <tr >
           <td>Morcilla</td>
           <td>3500</td>
-          <td><input type="number" name="morcilla" min="0" value="0" id="morcillacount"></td>
-          <td id="totrellena"></td>
+          <td><input type="number" name="morcilla" min="0" value="0" id="morcillacount" class="asumar"></td>
+          <td></td>
         </tr>
         <tr >
           <td>Longaniza</td>
           <td>4500</td>
-          <td><input type="number" name="longaniza" min="0" value="0" id="longanizacount"></td>
+          <td><input type="number" name="longaniza" min="0" value="0" id="longanizacount" class="asumar"></td>
           <td></td>
         </tr>
-        <!-- Resto de los ingredientes -->
+        <tr >
+          <td>plátano</td>
+          <td>4000</td>
+          <td><input type="number" name="plátano" min="0" value="0" id="platanocount" class="asumar"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Papa criolla</td>
+          <td>5000</td>
+          <td><input type="number" name="papa" min="0" value="0" class="asumar"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Chicharrón Cocho</td>
+          <td>5000</td>
+          <td><input type="number" name="chicharoncocho" min="0" value="0"id="chicharoncochocount"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Chicharrón Totiado</td>
+          <td>5000</td>
+          <td><input type="number" name="chicharontotiado" min="0" value="0"id="chicharontotiadocount"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Arepas</td>
+          <td>2500</td>
+          <td><input type="number" name="huesos" min="0" value="0"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Yuca</td>
+          <td>3500</td>
+          <td><input type="number" name="huesos" min="0" value="0"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Buche</td>
+          <td>3000</td>
+          <td><input type="number" name="huesos" min="0" value="0"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Bofe</td>
+          <td>3000</td>
+          <td><input type="number" name="huesos" min="0" value="0"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Envuelto</td>
+          <td>2500</td>
+          <td><input type="number" name="huesos" min="0" value="0"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Guacamole</td>
+          <td>3000</td>
+          <td><input type="number" name="huesos" min="0" value="0"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Costillas</td>
+          <td>15000</td>
+          <td><input type="number" name="huesos" min="0" value="0"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Sobrebarriga</td>
+          <td>15000</td>
+          <td><input type="number" name="huesos" min="0" value="0"></td>
+          <td></td>
+        </tr>
         <tr>
           <td>Huesos de cerdo</td>
           <td>16000</td>
           <td><input type="number" name="huesos" min="0" value="0"></td>
           <td></td>
         </tr>
-        <tr>
-            <td>Papa criolla</td>
-            <td>5000</td>
-            <td><input type="number" name="papa" min="0" value="0"></td>
-            <td></td>
-          </tr>
+        
           <tr>
             <td>Total</td>                      
             <td></td>
