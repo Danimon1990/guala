@@ -79,3 +79,34 @@ table {
   margin: 0 auto;
   font-size: 1.8rem;
 }
+.title {
+  font-size: 2rem;
+} 
+.day {
+  font-size: 1.5rem;
+}
+
+
+.horario {
+  list-style: none;}
+  @media (max-width: 640px) {
+    .navfont {
+      width: 100%
+    }
+    nav a {
+      display: inline-block;
+      padding: 1px;
+    }
+    .comunidad {
+      display: none;
+    }
+  /*
+  display: grid;
+  place-items: center;
+  background-color: #A0D8B3;
+  
+  width:300px;
+  padding: 5px;
+  align-items: center;
+  
+}
